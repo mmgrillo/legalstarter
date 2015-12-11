@@ -47,4 +47,5 @@ end
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "font-awesome-rails"
 gem "devise"
+gem "annotate"
 

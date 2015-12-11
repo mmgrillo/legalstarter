@@ -1,4 +1,18 @@
+
 // FORMS //
+
+.signup-box {
+  text-align: center;
+  width: 100%;
+  border-style: solid;
+  border-color: grey;
+  border-radius: 6px;
+}
+
+.devise-placeholders {
+  width: 90%;
+  margin-bottom: 4%;
+}
 
 .form-horizontal .form-group {
   margin-left: auto;
@@ -72,7 +86,7 @@ input:focus {
   border: 1px solid #ccc !important;
 }
 
-// THIS CSS SNINEPP TURNS YOUR WEBPAGES PRINTABLE
+// SNINEPP WEBPAGES PRINTABLE
 
 @media print {
   * {
