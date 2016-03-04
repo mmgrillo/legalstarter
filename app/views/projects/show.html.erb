@@ -1,0 +1,12 @@
+
+<div class="container" style="">
+	<div class="row">
+				<%= render @project %>
+	</div>
+
+	<% if user_signed_in? %> 
+		<button class="btn btn-danger btn-sm" id="success-button"><%= link_to 'Destroy', projects_path, method: :delete, data: { confirm: 'Are you sure?' } %></button>
+	<% end %>
+
+
+</div>

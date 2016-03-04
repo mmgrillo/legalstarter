@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   root "projects#index"
   devise_for :users
+  
+  #resources = get + put + patch => resources :projects creates all the routes for Projects.
   resources :projects
 
   # The priority is based upon order of creation: first created -> highest priority.

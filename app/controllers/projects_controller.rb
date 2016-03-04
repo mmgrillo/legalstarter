@@ -1,6 +1,9 @@
 class ProjectsController < ApplicationController
 	
 	before_action :authenticate_user!, except: [:index, :show] 
+#este before_action :set_project (podia ter qq outro nome) permite a todos 
+#os methods em baixo usufruirem de: @project = Project.find(params[:id])
+#em vez de estar a inserir em todos, faz-se assim para ser DRY code. 
 	before_action :set_project, only: [:show, :edit, :update, :destroy] 
 
 
@@ -48,7 +51,7 @@ class ProjectsController < ApplicationController
   def destroy
   	@project.destroy
   	respond_to do |format|
-        format.html { redirect_to project_path, notice: 'Product was successfully destroyed.' }
+        format.html { redirect_to @project, notice: 'Product was successfully destroyed.' }
         format.json { head :no_content }
     end
   end
