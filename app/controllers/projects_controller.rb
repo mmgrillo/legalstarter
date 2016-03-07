@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
 	
-	before_action :authenticate_user!, except: [:index, :show] 
+	before_action :authenticate_organization!, except: [:index, :show] 
 #este before_action :set_project (podia ter qq outro nome) permite a todos 
 #os methods em baixo usufruirem de: @project = Project.find(params[:id])
 #em vez de estar a inserir em todos, faz-se assim para ser DRY code. 
